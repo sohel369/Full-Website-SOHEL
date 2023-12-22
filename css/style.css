@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.2), #009688 99%), url(./../media/ocean-2661830_1920.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+h2 {
+    position: absolute;
+    top: 4%;
+    left: 10%;
+    color: #000;
+}
+
+.banner_text {
+    text-align: center;
+    padding-top: 150px;
+    color: white;
+}
+
+.banner_text h1 {
+    text-transform: capitalize;
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+.banner_text p {
+    font-style: italic;
+    font-size: 28px;
+    color: #031321;
+    text-transform: capitalize;
+}
+
+.banner_btn {
+    margin: 70px auto 0;
+}
+
+.banner_btn a {
+    text-decoration: none;
+    width: 120px;
+    color: white;
+    padding: 12px 0;
+    display: inline-block;
+    margin: 0 12px;
+    font-size: 20px;
+    border: 0.5px solid white;
+    position: relative;
+    z-index: 1;
+}
+
+.banner_btn a:hover {
+    color: black;
+}
+
+.banner_btn a span {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 0;
+    background: white;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 1s;
+}
+
+.banner_btn a:hover span {
+    width: 100%;
+}
+
+#sideNave {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    background: #009688;
+    height: 100vh;
+    transition: 0.8s;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    position: relative;
+}
+
+/* #menu_btn{
+    width: 400px;
+    background: #009688;
+    height: 299px;
+} */
+#menu_btn i {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 4px;
+}
+ nav ul li a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 4px;
+    border-radius: 8px;
+    left: 0;
+    bottom: -10px;
+    background: white;
+    transition: 1s;
+}
+nav ul li a:hover::before{
+    width: 100%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .banner_text h1{
+        font-size: 44px;
+    }
+    .banner_text p{
+        font-size: 14px;
+    }
+    .banner_btn a{
+        margin: 20px auto;
+        display: block;
+    }
+   
+}

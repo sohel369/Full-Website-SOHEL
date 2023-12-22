@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Full Website ✡SOHEL</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="banner">
+        <h2>Internet</h2>
+        <div class="banner_text">
+            <h1>University</h1>
+            <p>More coding and enjoy your life</p>
+            <div class="banner_btn">
+                <a href="#"><span></span> Find out</a>
+                <a href="#"><span></span> Read more</a>
+            </div>
+        </div>
+    </section>
+    <div id="sideNave">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">features</a></li>
+                <li><a href="#">testimonials</a></li>
+                <li><a href="#">meet us</a></li>
+            </ul>
+        </nav>
+        <div id="menu_btn">
+            <!-- <img src="./media/hamburger-button-computer-icons-menu-clip-art-menu-removebg-preview.png" alt=""> -->
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        let menu_btn = document.getElementById("menu_btn");
+        let sideNave = document.getElementById("sideNave");
+        let menu = document.getElementById("menu");
+
+        sideNave.style.right = "-250px";
+        menu_btn.onclick = function (event) {
+            event.preventDefault();
+            if
+                (sideNave.style.right == "-250px")
+                sideNave.style.right = "0";
+            
+            else {
+                sideNave.style.right = "-250px";
+            }
+        }
+    </script>
+
+
+    <!-- 
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let menu_btn = document.getElementById("menu_btn");
+            let sideNave = document.getElementById("sideNave");
+    
+            menu_btn.onclick = function (event) {
+                event.preventDefault(); // Prevent the default action of the link
+                if (sideNave.style.right === "-250px") {
+                    sideNave.style.right = "0";
+                } else {
+                    sideNave.style.right = "-250px";
+                }
+            };
+        });
+    </script> -->
+
+
+
+</body>
+
+</html>
