@@ -83,6 +83,7 @@ h2 {
     background: #054a43;
     height: 100vh;
     transition: 0.8s;
+    z-index: 100;
 }
 
 nav ul li {
@@ -232,6 +233,7 @@ nav ul li a:hover::before {
     width: 100%;
     padding: 70p 0;
     background: #efefef;
+    z-index: 2;
 }
 
 .service_box {
