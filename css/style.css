@@ -405,7 +405,7 @@ nav ul li a:hover::before {
     position: absolute;
     top: 35%;
     left: 50%;
-    max-width: 400px;
+    max-width: 300px;
     transform: translate(-50%, -50%);
     opacity: 0.2;
 }
@@ -467,5 +467,7 @@ nav ul li a:hover::before {
     .footer_row {
         flex-direction: column;
         text-align: center;
+        width: 100%;
+        padding: 0;
     }
 }
